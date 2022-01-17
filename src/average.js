@@ -11,7 +11,7 @@
     - average([1, 1]) // Retorno: 1;
     - average([1, '2']) // Retorno: undefined;
 */ 
-
+/* Usei como referência a função Math.round () para arredondar o valor da média. Link: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/round */
 const average = (myArray) => {
   let sum = 0; 
   let media = '';
