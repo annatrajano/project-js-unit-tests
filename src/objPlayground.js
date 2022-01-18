@@ -37,7 +37,7 @@ const calculator = (number1, number2) => {
     let objectCalculator = {
       sum: number1 + number2,
       mult: number1 * number2,
-      div: Math.trunc(number1 / number2, -0.1),
+      div: Math.trunc(number1 / number2),
       sub: number1 - number2,
     };
 return objectCalculator;
