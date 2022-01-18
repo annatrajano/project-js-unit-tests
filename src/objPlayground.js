@@ -32,9 +32,25 @@
   arrayGenerator('values', { sum: 3, mult: 2, div: 1, sub: 0 }) // [ 3, 2, 1, 0 ]
   arrayGenerator('entries', { sum: 3, mult: 2, div: 1, sub: 0 }) // [ [ 'sum', 3 ], [ 'mult', 2 ], [ 'div', 1 ], [ 'sub', 0 ] ]
 */
+/* Usei como referência a documentação da função Math.trunc() para truncar o retorno da divisão. Link: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc */
+const calculator = (number1, number2) => {
+    let objectCalculator = {
+      sum: number1 + number2,
+      mult: number1 * number2,
+      div: Math.trunc(number1 / number2, -0.1),
+      sub: number1 - number2,
+    };
+return objectCalculator;
+};
 
-const calculator = (number1, number2) => {};
-
-const arrayGenerator = (type, object) => {};
+const arrayGenerator = (type, object) => {
+  if (type === 'keys') {
+    return Object.keys(object);
+  } if (type === 'values') {
+    return Object.values(object);
+  } if (type === 'entries') {
+    return Object.entries(object);
+  }
+};
 
 module.exports = { calculator, arrayGenerator };
