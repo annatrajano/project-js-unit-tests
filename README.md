@@ -27,7 +27,7 @@ Após cada um dos passos, haverá um exemplo do comando a ser digitado para faze
 
 3. Acesse o diretório do projeto e depois utilize o comando **npm i** para instalar todas as dependências necessárias:
 ```javascript
-  cd project-trybewallet-
+  cd project-js-unit-tests
   npm i
 ```
 
